@@ -1,0 +1,19 @@
+<div class="container text-center"> 
+<h3>sin salida {{visitante|json}} </h3>
+</div>
+
+
+<app-login
+(visitanteEvent)="verificar($event)"
+[visitant]="visitante"
+></app-login>
+
+<router-outlet></router-outlet>
+
+<!--
+(visitanteEvent)   		-> esto tiene que estar en el js que emite
+
+="verificar($event)" 	->y esto tiene que estar en doc que lo recive
+	
+
+-->
